@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_dossier_facteurs_risques",
+  "info": {
+    "displayName": "facteursRisque"
+  },
+  "options": {},
+  "attributes": {
+    "tabagisme": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "alcool": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "sedentarite": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "cholesterol": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "age": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "heredite": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "singularName": "note",
+    "pluralName": "notes",
+    "displayName": "Note"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idNote": {
+      "type": "uid"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "dossier": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dossier.dossier",
+      "inversedBy": "notes"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "notes"
+    }
+  }
+}

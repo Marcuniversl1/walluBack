@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_user_contact_accompagnants",
+  "info": {
+    "displayName": "accompagnant"
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "integer"
+    },
+    "lienParente": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "diabetes": {
+      "displayName": "blockText",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.block-text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "displayName": "cover",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.cover"
+    },
+    "events": {
+      "displayName": "blockImage",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.block-image"
+    },
+    "partenaires": {
+      "displayName": "Images",
+      "type": "component",
+      "repeatable": true,
+      "component": "home.images"
+    },
+    "maps": {
+      "displayName": "localisation",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.localisation"
+    }
+  }
+}

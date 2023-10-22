@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_prise_glycemies",
+  "info": {
+    "displayName": "glycemie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "avantRepas": {
+      "type": "float"
+    },
+    "apresRepas": {
+      "type": "float"
+    },
+    "repas": {
+      "type": "enumeration",
+      "enum": [
+        "Petit Déjeuner",
+        "Déjeuner",
+        "Diner"
+      ]
+    }
+  }
+}

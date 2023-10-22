@@ -1,0 +1,33 @@
+{
+  "name": "wallu-back",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.8.2",
+    "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/provider-email-nodemailer": "^4.11.3",
+    "@strapi/strapi": "^4.8.2",
+    "better-sqlite3": "7.4.6",
+    "strapi-location-field-plugin": "^1.0.4",
+    "strapi-plugin-config-sync": "^1.1.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "e59cc0f4-f573-42ba-8cc3-63bd8c01eb73"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

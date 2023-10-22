@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_maps",
+  "info": {
+    "displayName": "map",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Iframe": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_block_images",
+  "info": {
+    "displayName": "blockImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card": {
+      "displayName": "blockImage",
+      "type": "component",
+      "repeatable": true,
+      "component": "image-card.block-image"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_prise_petit_dejeuners",
+  "info": {
+    "displayName": "petitDejeuner"
+  },
+  "options": {},
+  "attributes": {
+    "avant": {
+      "type": "decimal"
+    },
+    "apres": {
+      "type": "float"
+    }
+  }
+}

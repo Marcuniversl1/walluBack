@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_dossier_antecedants",
+  "info": {
+    "displayName": "antecedant"
+  },
+  "options": {},
+  "attributes": {
+    "medicaux": {
+      "type": "string"
+    },
+    "chirurgicaux": {
+      "type": "string"
+    },
+    "familiaux": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hopitals",
+  "info": {
+    "singularName": "hopital",
+    "pluralName": "hopitals",
+    "displayName": "Centre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "integer"
+    },
+    "localisation": {
+      "type": "string"
+    }
+  }
+}

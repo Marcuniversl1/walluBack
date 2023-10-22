@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dossiers",
+  "info": {
+    "singularName": "dossier",
+    "pluralName": "dossiers",
+    "displayName": "Dossier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codeDossier": {
+      "type": "uid"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note",
+      "mappedBy": "dossier"
+    },
+    "anneDiag": {
+      "type": "date"
+    },
+    "insulinotherapie": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "insulinotherapieDepuis": {
+      "type": "date"
+    },
+    "vaccinations": {
+      "type": "string"
+    },
+    "obesite": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "hypertension": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "hypothyroidie": {
+      "type": "enumeration",
+      "enum": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "autrePathologie": {
+      "type": "string"
+    },
+    "antecedents": {
+      "displayName": "antecedant",
+      "type": "component",
+      "repeatable": false,
+      "component": "dossier.antecedant"
+    },
+    "facteursRisque": {
+      "displayName": "facteursRisque",
+      "type": "component",
+      "repeatable": false,
+      "component": "dossier.facteurs-risque"
+    }
+  }
+}

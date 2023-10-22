@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_carnet_prises",
+  "info": {
+    "displayName": "prise",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "glycemie": {
+      "displayName": "glycemie",
+      "type": "component",
+      "repeatable": false,
+      "component": "prise.glycemie"
+    }
+  }
+}

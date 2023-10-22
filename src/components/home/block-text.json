@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_block_texts",
+  "info": {
+    "displayName": "blockText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "block": {
+      "displayName": "block",
+      "type": "component",
+      "repeatable": true,
+      "component": "block-text.block"
+    }
+  }
+}

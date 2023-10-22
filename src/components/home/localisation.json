@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_home_localisations",
+  "info": {
+    "displayName": "localisation"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "map": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localisation.map"
+    }
+  }
+}

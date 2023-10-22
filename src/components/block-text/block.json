@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_block_text_blocks",
+  "info": {
+    "displayName": "block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

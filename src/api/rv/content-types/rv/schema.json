@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rvs",
+  "info": {
+    "singularName": "rv",
+    "pluralName": "rvs",
+    "displayName": "Rv"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "datetime"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "rdvs"
+    }
+  }
+}
