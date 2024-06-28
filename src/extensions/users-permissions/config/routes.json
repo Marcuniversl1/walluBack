@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/auth/register-doctor",
+      "handler": "Auth.registerDoctor",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auth/register-patient",
+      "handler": "Auth.registerPatient",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

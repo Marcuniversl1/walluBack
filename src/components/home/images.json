@@ -17,8 +17,9 @@
         "audios"
       ]
     },
-    "link": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }

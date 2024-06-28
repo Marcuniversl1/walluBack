@@ -50,6 +50,16 @@
       "type": "component",
       "repeatable": false,
       "component": "home.localisation"
+    },
+    "DietCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "image-card.block-image"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
     }
   }
 }

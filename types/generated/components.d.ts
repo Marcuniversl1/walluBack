@@ -26,6 +26,19 @@ export interface CarnetPrise extends Schema.Component {
   };
 }
 
+export interface ContactContact extends Schema.Component {
+  collectionName: 'components_contact_contacts';
+  info: {
+    displayName: 'Contact';
+    description: '';
+  };
+  attributes: {
+    tel: Attribute.Integer;
+    email: Attribute.Email;
+    adresse: Attribute.Text;
+  };
+}
+
 export interface DossierAntecedant extends Schema.Component {
   collectionName: 'components_dossier_antecedants';
   info: {
@@ -97,7 +110,7 @@ export interface HomeImages extends Schema.Component {
   };
   attributes: {
     image: Attribute.Media;
-    link: Attribute.String;
+    name: Attribute.String & Attribute.Required;
   };
 }
 
@@ -105,10 +118,12 @@ export interface HomeLocalisation extends Schema.Component {
   collectionName: 'components_home_localisations';
   info: {
     displayName: 'localisation';
+    description: '';
   };
   attributes: {
-    title: Attribute.String;
-    map: Attribute.Component<'localisation.map', true>;
+    name: Attribute.String;
+    iframe: Attribute.Text;
+    link: Attribute.Text;
   };
 }
 
@@ -122,19 +137,6 @@ export interface ImageCardBlockImage extends Schema.Component {
     description: Attribute.Text;
     cover: Attribute.Media;
     date: Attribute.Date;
-  };
-}
-
-export interface LocalisationMap extends Schema.Component {
-  collectionName: 'components_home_maps';
-  info: {
-    displayName: 'map';
-    description: '';
-  };
-  attributes: {
-    name: Attribute.String;
-    Iframe: Attribute.Text;
-    link: Attribute.String;
   };
 }
 
@@ -182,6 +184,7 @@ declare module '@strapi/types' {
     export interface Components {
       'block-text.block': BlockTextBlock;
       'carnet.prise': CarnetPrise;
+      'contact.contact': ContactContact;
       'dossier.antecedant': DossierAntecedant;
       'dossier.facteurs-risque': DossierFacteursRisque;
       'home.block-image': HomeBlockImage;
@@ -190,7 +193,6 @@ declare module '@strapi/types' {
       'home.images': HomeImages;
       'home.localisation': HomeLocalisation;
       'image-card.block-image': ImageCardBlockImage;
-      'localisation.map': LocalisationMap;
       'prise.glycemie': PriseGlycemie;
       'prise.petit-dejeuner': PrisePetitDejeuner;
       'user-contact.accompagnant': UserContactAccompagnant;

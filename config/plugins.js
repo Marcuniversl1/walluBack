@@ -16,6 +16,14 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  documentation: {
+    config: {
+      "x-strapi-config": {
+        plugins: ["menus", "upload", "users-permissions"],
+      },
+    },
+  },
+
   "location-field": {
     enabled: true,
     config: {

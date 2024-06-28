@@ -4,21 +4,39 @@
   "info": {
     "singularName": "rv",
     "pluralName": "rvs",
-    "displayName": "Rv"
+    "displayName": "appointment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "time": {
-      "type": "datetime"
+    "date": {
+      "type": "date"
     },
-    "user": {
+    "time": {
+      "type": "time"
+    },
+    "statut": {
+      "type": "enumeration",
+      "enum": [
+        "annulé",
+        "confirmé",
+        "en attente"
+      ]
+    },
+    "patient": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "rdvs"
+      "target": "api::patient.patient",
+      "inversedBy": "appointments"
+    },
+    "medecin": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::medecin.medecin",
+      "inversedBy": "appointments"
     }
   }
 }

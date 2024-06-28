@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medecins",
+  "info": {
+    "singularName": "medecin",
+    "pluralName": "medecins",
+    "displayName": "Medecin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prenom": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "specialisation": {
+      "type": "string"
+    },
+    "profil": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact"
+    },
+    "appointments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rv.rv",
+      "mappedBy": "medecin"
+    }
+  }
+}

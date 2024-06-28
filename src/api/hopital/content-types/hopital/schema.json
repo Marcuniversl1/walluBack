@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hopital",
     "pluralName": "hopitals",
-    "displayName": "Centre"
+    "displayName": "Centre",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,8 +21,16 @@
     "tel": {
       "type": "integer"
     },
+    "Contact": {
+      "displayName": "Contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact"
+    },
     "localisation": {
-      "type": "string"
+      "type": "component",
+      "repeatable": false,
+      "component": "home.localisation"
     }
   }
 }

@@ -1,0 +1,38 @@
+{
+  "attributes": {
+    "username": {
+      "type": "string",
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "provider": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "default": null
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users"
+    },
+    "appointments": {
+      "collection": "appointment",
+      "via": "doctor"
+    }
+  }
+}
